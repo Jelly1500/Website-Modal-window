@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="C:\Users\jelly\OneDrive\바탕 화면\pythonProject\prac5.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar hidden">
+            <div class="header">
+                <div>
+                    <h2>Sidebar</h2>
+                </div>
+                <div>
+                    <button><img src="C:\Users\jelly\Downloads\close.png" class="x"></button>
+                </div>
+            </div>
+            <div class="body">
+                <div class="item">List1</div>
+                <div class="item">List2</div>
+                <div class="item">List3</div>
+                <div class="item">List4</div>
+            </div>
+            <div class="tail">
+                <a class="item" href="xx.x"><img src="C:\Users\jelly\Downloads\facebook.png" class="img"></a>
+                <a class="item" href="xx.x"><img src="C:\Users\jelly\Downloads\twitter.png" class="img"></a>
+                <a class="item" href="xx.x"><img src="C:\Users\jelly\Downloads\instagram.png" class="img"></a>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Main Content</h1>
+        </div>
+    </div>
+    <button id="sideOpen"><img src="C:\Users\jelly\Downloads\menu.png" class="hamburger"></button>
+
+    <script>
+        const sidebarBtn = document.getElementById("sideOpen");
+        const main_frame = document.querySelector(".container");
+        const obj_main = main_frame.querySelector(".main");
+        const obj_sidebar = main_frame.querySelector(".sidebar");
+        const header = obj_sidebar.querySelector(".header");
+        const closeBtn = header.querySelector("button");
+
+        const openSidebar = () => {
+            obj_sidebar.classList.remove("hidden");
+        }
+
+        const closeSidebar = () => {
+            obj_sidebar.classList.add("hidden");
+        }
+
+        closeBtn.addEventListener("click", closeSidebar);
+        obj_main.addEventListener("click", closeSidebar);
+        sidebarBtn.addEventListener("click", openSidebar);
+
+
+    </script>
+</body>
+</html>

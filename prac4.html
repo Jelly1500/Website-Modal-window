@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\jelly\OneDrive\바탕 화면\pythonProject\prac4.css">
+</head>
+<body>
+    <button id="open">Open Modal</button>
+
+    <div class="modal hidden">
+        <div class="modal_Overlay"></div>
+        <div class="modal_content">
+            <h1>I'm a modal</h1>
+            <button id="close">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.querySelector(".modal");
+        const modal_Overlay = modal.querySelector(".modal_Overlay");
+        const openBtn = document.getElementById("open");
+        const closeBtn = modal.querySelector("button");
+
+        const openModal = () => {
+            modal.classList.remove("hidden");
+        }
+
+        const closeModal = () => {
+            modal.classList.add("hidden");
+        }
+
+        modal_Overlay.addEventListener("click", closeModal);
+        openBtn.addEventListener("click", openModal);
+        closeBtn.addEventListener("click", closeModal);
+
+    </script>
+</body>
+</html>

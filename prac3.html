@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="C:\Users\jelly\OneDrive\바탕 화면\pythonProject\prac3.css">
+    <title>color flipper</title>
+</head>
+<body id="canvas">
+    <button onclick="MyFunction()">Click Me!</button>
+    
+    <script>
+        function MyFunction() {
+            var randArr = [];
+            for(var i = 0; i < 3; i++) {
+                var num = Math.floor(Math.random() * 255);
+                num = num.toString(16);
+                randArr.push(num);
+            }
+
+            var color = "#";
+
+            for(var i = 0; i < 3; i++) {
+                color = color + randArr[i];
+            }
+           
+            document.body.style.backgroundColor = color
+        }
+    </script>
+</body>
+</html>

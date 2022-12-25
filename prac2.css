@@ -1,0 +1,62 @@
+.body {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 10px;
+    right: 0%;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.468);
+}
+
+#visibleBtn {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: rgba(195, 195, 195, 0.674);
+}
+
+
+.option {
+    height: min-content;
+}
+
+.heading {
+    color: white;
+    font-size: 20px;
+}
+
+.video {
+    color: white;
+    background: rgba(120, 120, 120, 0.441);
+    border: 2px solid rgba(225, 225, 225, 0.726);
+    border-radius: 4px 4px 4px 4px / 4px 4px 4px 4px;
+}
+
+.video p {
+    color: white;
+    font-size: 16px;
+    background: rgba(205, 204, 204, 0.481);
+    margin: 0px;
+    text-align: center;
+}
+
+.video select {
+    background: rgba(134, 134, 134, 0.43);
+}
+
+.opt {
+    padding-left: 10px;
+}
+
+.opt:hover {
+    background: rgba(205, 205, 205, 0.536);
+    border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+}
